@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#mainPane {
+	-fx-background-image: url(/resource/animal.jpg);
+	-fx-background-size: cover;
+	-fx-background-position: center center;	
+}
+
+#wordPane {
+	-fx-background-image: url(/resource/cat.jpg);
+	-fx-background-size: cover;
+	-fx-background-position: center center;	
+}
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Main">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="파일 ">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#saveAction" text="저장하기" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitAction" text="종료하기" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="통계">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#barChartAction" text="막대 차트" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="도움말 ">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="알아보기" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
