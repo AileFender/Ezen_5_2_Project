@@ -1,0 +1,140 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAGBihnaCt9/bxk=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Data Model1",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAGBihnaCt+AGW0=",
+					"_parent": {
+						"$ref": "AAAAAAGBihnaCt9/bxk="
+					},
+					"name": "ERDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAGBihnjD9+Gi84=",
+							"_parent": {
+								"$ref": "AAAAAAGBihnaCt+AGW0="
+							},
+							"model": {
+								"$ref": "AAAAAAGBihnjD9+EyNs="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGBihnjD9+HlVo=",
+									"_parent": {
+										"$ref": "AAAAAAGBihnjD9+Gi84="
+									},
+									"font": "Arial;13;1",
+									"left": 208,
+									"top": 213,
+									"width": 162.93896484375,
+									"height": 13,
+									"text": "단어장"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAGBihnjD9+I7H4=",
+									"_parent": {
+										"$ref": "AAAAAAGBihnjD9+Gi84="
+									},
+									"model": {
+										"$ref": "AAAAAAGBihnjD9+EyNs="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGBihoKG9+4UFY=",
+											"_parent": {
+												"$ref": "AAAAAAGBihnjD9+I7H4="
+											},
+											"model": {
+												"$ref": "AAAAAAGBihoKFt+18V8="
+											},
+											"font": "Arial;13;0",
+											"left": 213,
+											"top": 236,
+											"width": 152.93896484375,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGBihpT7N/ACOg=",
+											"_parent": {
+												"$ref": "AAAAAAGBihnjD9+I7H4="
+											},
+											"model": {
+												"$ref": "AAAAAAGBihpT6N+94oU="
+											},
+											"font": "Arial;13;0",
+											"left": 213,
+											"top": 251,
+											"width": 152.93896484375,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 231,
+									"width": 162.93896484375,
+									"height": 38
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 208,
+							"top": 208,
+							"width": 162.93896484375,
+							"height": 64,
+							"nameLabel": {
+								"$ref": "AAAAAAGBihnjD9+HlVo="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAGBihnjD9+I7H4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAGBihnjD9+EyNs=",
+					"_parent": {
+						"$ref": "AAAAAAGBihnaCt9/bxk="
+					},
+					"name": "단어장",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGBihoKFt+18V8=",
+							"_parent": {
+								"$ref": "AAAAAAGBihnjD9+EyNs="
+							},
+							"name": "한글단어",
+							"type": "varchar",
+							"length": "100"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGBihpT6N+94oU=",
+							"_parent": {
+								"$ref": "AAAAAAGBihnjD9+EyNs="
+							},
+							"name": "영단어",
+							"type": "varchar",
+							"length": "100"
+						}
+					]
+				}
+			]
+		}
+	]
+}

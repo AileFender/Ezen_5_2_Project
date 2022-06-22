@@ -1,0 +1,140 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "ERDDataModel",
+			"_id": "AAAAAAGBihW/K0BJmxc=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Data Model1",
+			"ownedElements": [
+				{
+					"_type": "ERDDiagram",
+					"_id": "AAAAAAGBihW/K0BKdVY=",
+					"_parent": {
+						"$ref": "AAAAAAGBihW/K0BJmxc="
+					},
+					"name": "ERDDiagram1",
+					"ownedViews": [
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAGBihXVp0BQ1Ic=",
+							"_parent": {
+								"$ref": "AAAAAAGBihW/K0BKdVY="
+							},
+							"model": {
+								"$ref": "AAAAAAGBihXVp0BO530="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGBihXVp0BRCnM=",
+									"_parent": {
+										"$ref": "AAAAAAGBihXVp0BQ1Ic="
+									},
+									"font": "Arial;13;1",
+									"left": 208,
+									"top": 213,
+									"width": 160.0634765625,
+									"height": 13,
+									"text": " vocabulary"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAGBihXVqEBSUTI=",
+									"_parent": {
+										"$ref": "AAAAAAGBihXVp0BQ1Ic="
+									},
+									"model": {
+										"$ref": "AAAAAAGBihXVp0BO530="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGBihaJc0BfXYM=",
+											"_parent": {
+												"$ref": "AAAAAAGBihXVqEBSUTI="
+											},
+											"model": {
+												"$ref": "AAAAAAGBihaJbkBcY5Y="
+											},
+											"font": "Arial;13;0",
+											"left": 213,
+											"top": 236,
+											"width": 150.0634765625,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAGBiha2i0Bmkes=",
+											"_parent": {
+												"$ref": "AAAAAAGBihXVqEBSUTI="
+											},
+											"model": {
+												"$ref": "AAAAAAGBiha2h0Bjw90="
+											},
+											"font": "Arial;13;0",
+											"left": 213,
+											"top": 251,
+											"width": 150.0634765625,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 231,
+									"width": 160.0634765625,
+									"height": 38
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 208,
+							"top": 208,
+							"width": 160.0634765625,
+							"height": 65,
+							"nameLabel": {
+								"$ref": "AAAAAAGBihXVp0BRCnM="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAGBihXVqEBSUTI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAGBihXVp0BO530=",
+					"_parent": {
+						"$ref": "AAAAAAGBihW/K0BJmxc="
+					},
+					"name": " vocabulary",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGBihaJbkBcY5Y=",
+							"_parent": {
+								"$ref": "AAAAAAGBihXVp0BO530="
+							},
+							"name": "korean",
+							"type": "varchar2",
+							"length": "100"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAGBiha2h0Bjw90=",
+							"_parent": {
+								"$ref": "AAAAAAGBihXVp0BO530="
+							},
+							"name": "english",
+							"type": "varchar2",
+							"length": "100"
+						}
+					]
+				}
+			]
+		}
+	]
+}
