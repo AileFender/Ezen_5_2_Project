@@ -1,3 +1,4 @@
+/* 단어에 대한 정보를 저장하는 공간 */
 package model;
 
 import javafx.beans.property.SimpleStringProperty;

@@ -56,7 +56,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
+	 /* WordMainView 를 호출 하여 보여줌 */
 	private void setWordMainView() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -120,7 +120,8 @@ public class Main extends Application {
 			dialogStage.setTitle("한글 검색");
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
-			Scene scene = new Scene(page);
+			Scene scene = new Scene(page , 610 ,210);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			dialogStage.setScene(scene);
 			
 			
@@ -136,7 +137,7 @@ public class Main extends Application {
 	
 	
 
-	
+	// 저장하기를 눌렀을때 동작할 함수 
 	@FXML
 	private void saveAction() {
 		WordDAO wordDAO = new WordDAO();
@@ -158,6 +159,7 @@ public class Main extends Application {
 		}
 	}
 	
+	// 종료하기를 눌렀을때 동작할 함수
 	@FXML
 	private void exitAction() {
 		System.exit(1);
