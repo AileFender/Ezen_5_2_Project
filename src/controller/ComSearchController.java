@@ -15,7 +15,7 @@ public class ComSearchController {
 	@FXML private TextField searchField;
 	
 	
-	
+	//DB와 연동하여 검색한 정보창 출력하는 컨트롤러
 	@FXML 
 	public void searchAction2() {
 		WordDAO WordDAO = new WordDAO();
@@ -32,11 +32,13 @@ public class ComSearchController {
 		dialogStage.close();
 	}
 	
+	//취소버튼 입력시 행동할 메소드
 	@FXML 
 	public void cancelAction() {
 		dialogStage.close();
 	}
 	
+	// 검색창에서 아무것도 입력하지 않았는지 확인하여 입력하지 않았을 시 error 메세지 출력하는 alert창 발생
 	private boolean valid() {
 		String errorMessge = "";
 		if( searchField.getText() == null || searchField.getText().equals("")) {
@@ -56,7 +58,7 @@ public class ComSearchController {
 	}
 	
 	
-	
+	// dialog의 stage를 설정함.
 	public void setDialogStage(Stage dialogStage) {
 		this.dialogStage = dialogStage;
 	}
