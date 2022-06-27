@@ -28,7 +28,7 @@ public class Main extends Application {
 	}
 	
 	
-	
+	// Word에서 단어장 목록을 가져와 항목을 반환.
 	public ObservableList<Word> getWordList() {
 	  return wordList;
 	}
@@ -42,9 +42,11 @@ public class Main extends Application {
 		setWordMainView();
 	}
 	
+	
+	// FXML 파일을 이용해 루트 레이아웃을 가져옵니다.
 	public void setRootLayout() {
 		try {
-			// FXML 파일을 이용해 루트 레이아웃을 가져옵니다.
+			
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("../view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
@@ -84,6 +86,7 @@ public class Main extends Application {
 		return primaryStage;
 	}
 	
+	// 파일을 실행 시켰을 시 화면에 WordDataView.fxml 화면을 보여주고 안에 Word의 내용을 집어넣음. 
 	public int setWordDataView(Word word) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -112,6 +115,7 @@ public class Main extends Application {
 		}
 	}
 	
+	//검색 버튼을 눌렀을때 불러올 화면을 출력함.
 	public void setSearchView() {
 		try {
 			FXMLLoader loader =  new FXMLLoader();
@@ -167,6 +171,7 @@ public class Main extends Application {
 		System.exit(1);
 	}
 	
+	//도움말의 알아보기를 눌렀을때 보여주는 창
 	@FXML
 	private void aboutAction() {
 		Alert alert = new Alert(AlertType.INFORMATION);
@@ -178,7 +183,7 @@ public class Main extends Application {
 		alert.showAndWait();
 	}
 	
-	// 
+	// 통계의 막대차트를 눌렀을시 행동할 동작.
 	@FXML
 	private void barChartAction() {
 		  try {
