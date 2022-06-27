@@ -29,7 +29,7 @@ public class WordDataController {
 	private void initialize() {
 	}
 	
-	// dialogStage 무대 를 설정함.
+	// dialogStage의 stage 를 설정함.
 	public void setDialogStage (Stage dialogStage) {
 		this.dialogStage = dialogStage;
 	}

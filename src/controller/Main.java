@@ -22,16 +22,18 @@ import javafx.scene.layout.BorderPane;
 public class Main extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-	public static ObservableList<Word> wordList = FXCollections.observableArrayList();
+	public static ObservableList<Word> wordList = FXCollections.observableArrayList(); //javafx 컬렉션을 사용하기 위해서 함수 사용.
 
 	public Main() {
 	}
-
+	
+	
+	
 	public ObservableList<Word> getWordList() {
 	  return wordList;
 	}
 	
-	
+	// RootLayout 과 WordMainView 를 호출하여 화면상에 보여줌
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
@@ -176,6 +178,7 @@ public class Main extends Application {
 		alert.showAndWait();
 	}
 	
+	// 
 	@FXML
 	private void barChartAction() {
 		  try {
