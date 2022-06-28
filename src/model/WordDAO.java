@@ -49,7 +49,7 @@ public class WordDAO {
 	}
 	
 	
-	// 데이터베이스에 접속해서 단어장 정보를 전부 지우는 함수
+	// 데이터베이스에 접속해서 단어장 정보를 삭제하는 함수
 	public int deleteWordList() {
 		String SQL = "DELETE FROM WORD";
 		try {

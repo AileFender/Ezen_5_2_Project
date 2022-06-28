@@ -60,6 +60,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
+	
 	 /* WordMainView 를 호출 하여 보여줌 */
 	private void setWordMainView() {
 		try {
@@ -86,7 +87,7 @@ public class Main extends Application {
 		return primaryStage;
 	}
 	
-	// 파일을 실행 시켰을 시 화면에 WordDataView.fxml 화면을 보여주고 안에 Word의 내용을 집어넣음. 
+	// 추가 파일을 실행 시켰을 시 화면에 WordDataView.fxml 화면을 보여주고 안에 Word의 내용을 집어넣음. 
 	public int setWordDataView(Word word) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
