@@ -62,7 +62,7 @@
 											"top": 270,
 											"width": 711,
 											"height": 15,
-											"text": "한 / 영 단어장 프로그램"
+											"text": "한 / 영 단어장 프로그램 Use-Case"
 										},
 										{
 											"_type": "LabelView",
@@ -74,7 +74,7 @@
 											"font": "Arial;15;0",
 											"left": -448,
 											"top": -16,
-											"width": 93.3544921875,
+											"width": 98.1884765625,
 											"height": 15,
 											"text": "(from Model1)"
 										},
@@ -193,7 +193,7 @@
 											"font": "Arial;15;0",
 											"left": -208,
 											"top": -16,
-											"width": 93.3544921875,
+											"width": 98.1884765625,
 											"height": 15,
 											"text": "(from Model1)"
 										},
@@ -373,9 +373,9 @@
 											"font": "Arial;15;0",
 											"left": -432,
 											"top": 104,
-											"width": 199.9951171875,
+											"width": 270.849609375,
 											"height": 15,
-											"text": "(from 한 / 영 단어장 프로그램)"
+											"text": "(from 한 / 영 단어장 프로그램 Use-Case)"
 										},
 										{
 											"_type": "LabelView",
@@ -575,9 +575,9 @@
 											"font": "Arial;15;0",
 											"left": -448,
 											"top": 104,
-											"width": 199.9951171875,
+											"width": 270.849609375,
 											"height": 15,
-											"text": "(from 한 / 영 단어장 프로그램)"
+											"text": "(from 한 / 영 단어장 프로그램 Use-Case)"
 										},
 										{
 											"_type": "LabelView",
@@ -777,9 +777,9 @@
 											"font": "Arial;15;0",
 											"left": -448,
 											"top": 104,
-											"width": 199.9951171875,
+											"width": 270.849609375,
 											"height": 15,
-											"text": "(from 한 / 영 단어장 프로그램)"
+											"text": "(from 한 / 영 단어장 프로그램 Use-Case)"
 										},
 										{
 											"_type": "LabelView",
@@ -979,9 +979,9 @@
 											"font": "Arial;15;0",
 											"left": -448,
 											"top": 104,
-											"width": 199.9951171875,
+											"width": 270.849609375,
 											"height": 15,
-											"text": "(from 한 / 영 단어장 프로그램)"
+											"text": "(from 한 / 영 단어장 프로그램 Use-Case)"
 										},
 										{
 											"_type": "LabelView",
@@ -1167,7 +1167,7 @@
 											"font": "Arial;15;1",
 											"left": 418,
 											"top": 652,
-											"width": 93,
+											"width": 94,
 											"height": 15,
 											"text": "프로그램 종료"
 										},
@@ -1181,9 +1181,9 @@
 											"font": "Arial;15;0",
 											"left": -448,
 											"top": 104,
-											"width": 199.9951171875,
+											"width": 270.849609375,
 											"height": 15,
-											"text": "(from 한 / 영 단어장 프로그램)"
+											"text": "(from 한 / 영 단어장 프로그램 Use-Case)"
 										},
 										{
 											"_type": "LabelView",
@@ -1305,7 +1305,7 @@
 							"containerChangeable": true,
 							"left": 391,
 							"top": 640,
-							"width": 147,
+							"width": 148,
 							"height": 38,
 							"nameCompartment": {
 								"$ref": "AAAAAAGBj5UEylCMtuE="
@@ -2726,9 +2726,9 @@
 												"$ref": "AAAAAAGBj6AOlFuP6zI="
 											},
 											"font": "Arial;13;1",
-											"left": 683.5,
+											"left": 684.5,
 											"top": 478.5,
-											"width": 137,
+											"width": 139,
 											"height": 13,
 											"text": "데이터 저장 및 DB 연동"
 										},
@@ -2759,9 +2759,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 678.5,
+									"left": 679.5,
 									"top": 471.5,
-									"width": 147.2236328125,
+									"width": 149,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGBj6AOlFuQ1j8="
@@ -2857,7 +2857,7 @@
 							"containerChangeable": true,
 							"left": 648,
 							"top": 448,
-							"width": 208,
+							"width": 212,
 							"height": 73,
 							"nameCompartment": {
 								"$ref": "AAAAAAGBj6AOlFuP6zI="
@@ -2901,7 +2901,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 595,
+									"left": 596,
 									"top": 371,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2921,9 +2921,9 @@
 										"$ref": "AAAAAAGBj7eByACn4XU="
 									},
 									"font": "Arial;15;0",
-									"left": 570,
+									"left": 571,
 									"top": 357,
-									"width": 64.21875,
+									"width": 64.29931640625,
 									"height": 15,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2944,7 +2944,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 580,
+									"left": 581,
 									"top": 396,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2963,7 +2963,7 @@
 								"$ref": "AAAAAAGBj5T42U/Xg28="
 							},
 							"lineStyle": 1,
-							"points": "490:334;687:447",
+							"points": "490:334;688:447",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGBj7eByACqTaE="
@@ -3018,7 +3018,7 @@
 									"font": "Arial;15;0",
 									"left": 559,
 									"top": 400,
-									"width": 64.21875,
+									"width": 64.29931640625,
 									"height": 15,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3113,7 +3113,7 @@
 									"font": "Arial;15;0",
 									"left": 551,
 									"top": 448,
-									"width": 64.21875,
+									"width": 64.29931640625,
 									"height": 15,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3208,7 +3208,7 @@
 									"font": "Arial;15;0",
 									"left": 542,
 									"top": 498,
-									"width": 64.21875,
+									"width": 64.29931640625,
 									"height": 15,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3922,7 +3922,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGBiiWIbjghdqE="
 					},
-					"name": "한 / 영 단어장 프로그램",
+					"name": "한 / 영 단어장 프로그램 Use-Case",
 					"ownedElements": [
 						{
 							"_type": "UMLUseCase",
