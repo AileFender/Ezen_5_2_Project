@@ -22,16 +22,18 @@ import javafx.scene.layout.BorderPane;
 public class Main extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-	public static ObservableList<Word> wordList = FXCollections.observableArrayList();
+	public static ObservableList<Word> wordList = FXCollections.observableArrayList(); //javafx 컬렉션을 사용하기 위해서 함수 사용.
 
 	public Main() {
 	}
-
+	
+	
+	// Word에서 단어장 목록을 가져와 항목을 반환.
 	public ObservableList<Word> getWordList() {
 	  return wordList;
 	}
 	
-	
+	// RootLayout 과 WordMainView 를 호출하여 화면상에 보여줌
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
@@ -40,9 +42,11 @@ public class Main extends Application {
 		setWordMainView();
 	}
 	
+	
+	// FXML 파일을 이용해 루트 레이아웃을 가져옵니다.
 	public void setRootLayout() {
 		try {
-			// FXML 파일을 이용해 루트 레이아웃을 가져옵니다.
+			
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("../view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
@@ -57,6 +61,7 @@ public class Main extends Application {
 		}
 	}
 	
+	 /* WordMainView 를 호출 하여 보여줌 */
 	private void setWordMainView() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -82,6 +87,7 @@ public class Main extends Application {
 		return primaryStage;
 	}
 	
+	// 추가 파일을 실행 시켰을 시 화면에 WordDataView.fxml 화면을 보여주고 안에 Word의 내용을 집어넣음. 
 	public int setWordDataView(Word word) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -110,6 +116,7 @@ public class Main extends Application {
 		}
 	}
 	
+	//검색 버튼을 눌렀을때 불러올 화면을 출력함.
 	public void setSearchView() {
 		try {
 			FXMLLoader loader =  new FXMLLoader();
@@ -120,7 +127,8 @@ public class Main extends Application {
 			dialogStage.setTitle("한글 검색");
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.initOwner(primaryStage);
-			Scene scene = new Scene(page);
+			Scene scene = new Scene(page , 610 ,210);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			dialogStage.setScene(scene);
 			
 			
@@ -136,7 +144,7 @@ public class Main extends Application {
 	
 	
 
-	
+	// 저장하기를 눌렀을때 동작할 함수 
 	@FXML
 	private void saveAction() {
 		WordDAO wordDAO = new WordDAO();
@@ -158,11 +166,13 @@ public class Main extends Application {
 		}
 	}
 	
+	// 종료하기를 눌렀을때 동작할 함수
 	@FXML
 	private void exitAction() {
 		System.exit(1);
 	}
 	
+	//도움말의 알아보기를 눌렀을때 보여주는 창
 	@FXML
 	private void aboutAction() {
 		Alert alert = new Alert(AlertType.INFORMATION);
@@ -174,6 +184,7 @@ public class Main extends Application {
 		alert.showAndWait();
 	}
 	
+	// 통계의 막대차트를 눌렀을시 행동할 동작.
 	@FXML
 	private void barChartAction() {
 		  try {

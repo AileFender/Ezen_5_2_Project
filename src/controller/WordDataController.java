@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Word;
@@ -28,10 +29,12 @@ public class WordDataController {
 	private void initialize() {
 	}
 	
+	// dialogStage의 stage 를 설정함.
 	public void setDialogStage (Stage dialogStage) {
 		this.dialogStage = dialogStage;
 	}
 	
+	//하나의 단어를 저장
 	public void setWord(Word word) {
 		this.word = word;
 		koreanField.setText(word.getKorean());
@@ -39,11 +42,12 @@ public class WordDataController {
 	}
 	
 
-	
+	// 이벤트를 마치고 값을 반환하는 함수
 	public int getReturnValue() {
 		return returnValue;
 	}
 	
+	//현재 사용자가 입력한 값이 정확한 지 파악하고 정확한 경우 반환값에 1을 넣어준뒤 dialog 닫음
 	@FXML
 	private void confirmAction() {
 		if (valid()) {
@@ -54,11 +58,13 @@ public class WordDataController {
 		}
 	}
 	
+	//dialog 창 닫음
 	@FXML
 	private void cancelAction() {
 		dialogStage.close();
 	}
 	
+	//입력 값들을 확인한 뒤에 비어있으면 오류 메세지를 띄우고 비어있지 않으면 True 값 반환
 	private boolean valid() {
 		String errorMessage = "";
 		if (koreanField.getText() == null || koreanField.getText().equals("")) {

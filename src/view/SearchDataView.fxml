@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComSearchController">
+<AnchorPane fx:id="wordPane" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComSearchController">
    <children>
       <Label layoutX="67.0" layoutY="35.0" text="단어를 입력하세요" />
       <Button layoutX="67.0" layoutY="163.0" mnemonicParsing="false" onAction="#searchAction2" text="검색" />
